@@ -301,16 +301,16 @@ our @KEYWORDS = qw(
 
 our @SYSTEM_FIELDS = qw(oid tableoid xmin xmin cmin xmax cmax ctid);
 our %BOOLEAN_MAP = (
-	'yes' => 't',
-	'no' => 'f',
-	'y' => 't',
-	'n' => 'f',
-	'1' => 't',
-	'0' => 'f',
-	'true' => 't',
-	'false' => 'f',
-	'enabled'=> 't',
-	'disabled'=> 'f',
+	'yes' => '1',
+	'no' => '0',
+	'y' => '1',
+	'n' => '0',
+	'1' => '1',
+	'0' => '0',
+	'true' => '1',
+	'false' => '0',
+	'enabled'=> '1',
+	'disabled'=> '0',
 );
 
 our @GRANTS = (
