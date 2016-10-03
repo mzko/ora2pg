@@ -6852,7 +6852,7 @@ sub _sql_type
 						if ($self->{pg_integer_type} && ($scale ne '0')) {
 							if ($precision < 5) {
 								return 'smallint';
-							} elsif ($precision <= 9) {
+							} elsif ($precision <= 10) {
 								return 'integer'; # The speediest in PG
 							} elsif ($precision <= 19) {
 								return 'bigint';
